@@ -9,6 +9,7 @@
     <version>1.0.0-SNAPSHOT</version>
     <modules>
         <module>hadoop-example</module>
+        <module>hbase-example</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -23,6 +24,7 @@
         <hadoop.version>3.1.3</hadoop.version>
         <junit.version>4.12</junit.version>
         <slf4j.version>1.7.30</slf4j.version>
+        <hbase.version>1.4.9</hbase.version>
     </properties>
 
     <dependencyManagement>
@@ -44,6 +46,17 @@
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-log4j12</artifactId>
                 <version>${slf4j.version}</version>
+            </dependency>
+            <!--       hbase     -->
+            <dependency>
+                <groupId>org.apache.hbase</groupId>
+                <artifactId>hbase-server</artifactId>
+                <version>${hbase.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.hbase</groupId>
+                <artifactId>hbase-client</artifactId>
+                <version>${hbase.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
