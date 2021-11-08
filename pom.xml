@@ -29,6 +29,17 @@
 
     <dependencyManagement>
         <dependencies>
+            <!--       hbase     -->
+            <dependency>
+                <groupId>org.apache.hbase</groupId>
+                <artifactId>hbase-server</artifactId>
+                <version>${hbase.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.hbase</groupId>
+                <artifactId>hbase-client</artifactId>
+                <version>${hbase.version}</version>
+            </dependency>
             <!--      hadoop      -->
             <dependency>
                 <groupId>org.apache.hadoop</groupId>
@@ -46,17 +57,6 @@
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-log4j12</artifactId>
                 <version>${slf4j.version}</version>
-            </dependency>
-            <!--       hbase     -->
-            <dependency>
-                <groupId>org.apache.hbase</groupId>
-                <artifactId>hbase-server</artifactId>
-                <version>${hbase.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.hbase</groupId>
-                <artifactId>hbase-client</artifactId>
-                <version>${hbase.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

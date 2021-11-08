@@ -12,11 +12,22 @@
     <artifactId>hbase-example</artifactId>
 
     <dependencies>
+        <!--        &lt;!&ndash;  所需hadoop依赖 &ndash;&gt;-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.apache.hadoop</groupId>-->
+        <!--            <artifactId>hadoop-common</artifactId>-->
+        <!--            <version>3.1.3</version>-->
+        <!--        </dependency>-->
         <!--       hbase     -->
         <dependency>
             <groupId>org.apache.hbase</groupId>
             <artifactId>hbase-client</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.apache.hbase</groupId>
+            <artifactId>hbase-server</artifactId>
+        </dependency>
+
     </dependencies>
 
 
