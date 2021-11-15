@@ -10,6 +10,7 @@
     <modules>
         <module>hadoop-example</module>
         <module>hbase-example</module>
+        <module>flink-example</module>
     </modules>
     <packaging>pom</packaging>
 
